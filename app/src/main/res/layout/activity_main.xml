@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewImie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/label_imie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextImie"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="@string/hint_imie"
+        android:inputType="text"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewImie"
+        app:layout_constraintTop_toTopOf="@+id/textViewImie" />
+
+    <TextView
+        android:id="@+id/textViewNazwisko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/label_nazwisko"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextImie"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextNazwisko"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="@string/hint_nazwisko"
+        android:inputType="text"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewNazwisko"
+        app:layout_constraintTop_toTopOf="@+id/textViewNazwisko" />
+
+    <TextView
+        android:id="@+id/textViewLiczbaOcen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/label_oceny"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNazwisko"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextLiczbaOcen"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:hint="@string/hint_oceny"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewLiczbaOcen"
+        app:layout_constraintTop_toTopOf="@+id/textViewLiczbaOcen" />
+    <TextView
+        android:id="@+id/textViewWynik"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/buttonZapisz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        />
+    <Button
+        android:id="@+id/buttonZapisz"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text= "@string/button_zapisz"
+        app:layout_constraintTop_toBottomOf="@id/editTextLiczbaOcen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        />
+    <Button
+        android:id="@+id/buttonSkoncz"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text= "@string/button_zapisz"
+        app:layout_constraintTop_toBottomOf="@id/textViewWynik"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

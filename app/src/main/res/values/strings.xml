@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Lab1-C</string>
+    <string name="label_imie">Imię</string>
+    <string name="hint_imie">Podaj Imię</string>
+    <string name="label_nazwisko">Nazwisko</string>
+    <string name="hint_nazwisko">Podaj Nazwisko</string>
+    <string name="label_oceny">Oceny</string>
+    <string name="hint_oceny">Podaj oceny</string>
+    <string name="button_zapisz">Zapisz</string>
+    <string name="final_text">Gratulacje wlasnie sprzedales swoje dane osobowe</string>
+    <string-array name="nazwy_przedmiotow">
+        <item>Matematyka</item>
+        <item>Fizyka</item>
+        <item>Chemia</item>
+        <item>Język polski</item>
+        <item>Język angielski</item>
+        <item>Język niemiecki</item>
+        <item>Historia</item>
+        <item>Geografia</item>
+        <item>WOS</item>
+        <item>WF</item>
+        <item>Religia</item>
+        <item>Biologia</item>
+        <item>Wychowanie fizyczne</item>
+        <item>Język hiszpański</item>
+        <item>Język francuski</item>
+        <item>Język rosyjski</item>
+    </string-array>
+</resources>
